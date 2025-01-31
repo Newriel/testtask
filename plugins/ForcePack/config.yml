@@ -59,12 +59,12 @@ Server:
       # For example, placing your resource pack as "plugins/ForcePack/pack.zip", the url will just be "forcepack://pack.zip".
       # ONLY PLAYERS ON 1.20.3+ CAN RECEIVE MULTIPLE RESOURCE PACKS. The first URL/Hash pair will be taken for older client versions.
       # URLs list and hashes list MUST BE THE SAME SIZE if generate-hash is disabled.
-      urls: ["https://www.convallyria.com/files/BlankPack.zip"]
+      urls: ["https://www.dropbox.com/scl/fi/z86q44pf12hwdi6yr8ydt/MVRP_V21.zip?rlkey=jiww13iaxsipk8tnxp0qusyjm&st=oxf05t7g&dl=1"]
       # Whether to automatically generate the SHA-1 hash.
       # The hash setting will be ignored if this is true, however it will fall back to that if the generation fails.
       generate-hash: false
       # See https://fortitude.islandearth.net/forcepack/configuration#getting-the-sha-1-hash-of-a-resource-pack
-      hashes: ["118AFFFC54CDCD308702F81BA24E03223F15FE5F"]
+      hashes: ["D485B8C7A6CA6568F550F8CB2949CD32007CDD5D"]
     # Here you can specify a pack format version-specific resource pack. You would copy the section above, replacing "all" with the number.
     # Note that the "all" section must be kept as a fallback.
     # See https://minecraft.wiki/w/Pack_format.

@@ -13,7 +13,7 @@ settings:
   limit-armor: true
   tps-catchup: true
   register-minecraft-debug-commands: false
-  fix-projectile-looting-transfer: false
+  fix-projectile-looting-transfer: true
   block-fall-multipliers:
     minecraft:orange_bed:
       distance: 0.5
@@ -72,7 +72,7 @@ settings:
       run-with-scissors: <player> slipped and fell on their shears
       stonecutter: <player> has sawed themself in half
   use-alternate-keepalive: false
-  disable-give-dropping: false
+  disable-give-dropping: true
   player-deaths-always-show-item: false
   enchantment:
     allow-looting-on-shears: false
@@ -185,7 +185,7 @@ settings:
     suppress-library-loader: false
   network:
     upnp-port-forwarding: false
-    max-joins-per-second: false
+    max-joins-per-second: true
     kick-for-out-of-order-chat: true
 config-version: 37
 world-settings:
@@ -343,7 +343,7 @@ world-settings:
         attributes:
           max_health: 10.0
           scale: 1.0
-        breeding-delay-ticks: 6000
+        breeding-delay-ticks: 12000
         takes-damage-from-water: false
         can-work-at-night: false
         can-work-in-rain: false
@@ -473,7 +473,7 @@ world-settings:
         attributes:
           max_health: 10.0
           scale: 1.0
-        disable-treasure-searching: false
+        disable-treasure-searching: true
         takes-damage-from-water: false
         naturally-aggressive-to-players-chance: 0.0
         always-drop-exp: false
@@ -697,7 +697,7 @@ world-settings:
           only-babies: true
           chance: 0.05
           try-existing-chickens: true
-        aggressive-towards-villager-when-lagging: true
+        aggressive-towards-villager-when-lagging: false
         bypass-mob-griefing: false
         takes-damage-from-water: false
         always-drop-exp: false
@@ -879,7 +879,7 @@ world-settings:
         follow-emerald-blocks: false
         can-be-leashed: false
         can-breed: true
-        breeding-delay-ticks: 6000
+        breeding-delay-ticks: 12000
         clerics-farm-warts: false
         cleric-wart-farmers-throw-warts-at-villagers: true
         bypass-mob-griefing: false
@@ -888,13 +888,13 @@ world-settings:
         always-drop-exp: false
         minimum-demand: 0
         lobotomize:
-          enabled: false
+          enabled: true
           check-interval: 100
           wait-until-trade-locked: false
-        display-trade-item: true
+        display-trade-item: false
         spawn-iron-golem:
-          radius: 0
-          limit: 0
+          radius: 5
+          limit: 5
         search-radius:
           acquire-poi: 48
           nearest-bed-sensor: 48
@@ -1074,7 +1074,7 @@ world-settings:
         attributes:
           max_health: 10.0
           scale: 1.0
-        immune-to-EAR: true
+        immune-to-EAR: false
         water-offset-check: 0.0
         can-fly: false
         takes-damage-from-water: false
@@ -1139,13 +1139,13 @@ world-settings:
         ridable: false
         ridable-in-water: true
         controllable: true
-        leave-trail-when-ridden: false
+        leave-trail-when-ridden: true
         attributes:
           max_health: 4.0
           scale: 1.0
         pumpkin-can-be-added-back: false
-        min-shoot-interval-ticks: 20
-        max-shoot-interval-ticks: 20
+        min-shoot-interval-ticks: 300
+        max-shoot-interval-ticks: 300
         snow-ball-modifier: 10.0
         attack-distance: 1.25
         bypass-mob-griefing: false
@@ -1187,8 +1187,8 @@ world-settings:
           try-existing-chickens: true
         takes-damage-from-water: false
         curing_time:
-          min: 3600
-          max: 6000
+          min: 1300
+          max: 3000
         cure:
           enabled: true
         always-drop-exp: false
@@ -1631,8 +1631,8 @@ world-settings:
       boat:
         eject-players-on-land: false
         do-fall-damage: false
-      disable-drops-on-cramming-death: false
-      entities-can-use-portals: true
+      disable-drops-on-cramming-death: true
+      entities-can-use-portals: false
       entities-pick-up-loot-bypass-mob-griefing: false
       fireballs-bypass-mob-griefing: false
       impose-teleport-restrictions-on-gateways: false
@@ -1689,14 +1689,14 @@ world-settings:
         allow-void-trading: false
       armorstand:
         step-height: 0.0
-        set-name-visible-when-placing-with-custom-name: false
-        fix-nametags: false
-        can-movement-tick: true
-        can-move-in-water: true
-        can-move-in-water-over-fence: true
-        place-with-arms-visible: false
+        set-name-visible-when-placing-with-custom-name: true
+        fix-nametags: true
+        can-movement-tick: false
+        can-move-in-water: false
+        can-move-in-water-over-fence: false
+        place-with-arms-visible: true
       arrow:
-        movement-resets-despawn-counter: true
+        movement-resets-despawn-counter: false
       mob-effects:
         health-regen-amount: 1.0
         minimal-health-poison-amount: 1.0
