@@ -56,7 +56,7 @@ anticheat:
       hide-itemmeta-with-visual-effects: false
 chunks:
   auto-save-interval: default
-  delay-chunk-unloads-by: 10s
+  delay-chunk-unloads-by: 7s
   entity-per-chunk-save-limit:
     arrow: -1
     ender_pearl: -1
@@ -67,7 +67,7 @@ chunks:
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
   max-auto-save-chunks-per-tick: 24
-  prevent-moving-into-unloaded-chunks: false
+  prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
   allow-vehicle-collisions: true
@@ -106,7 +106,7 @@ entities:
       zombies: false
     nerf-pigmen-from-nether-portals: false
     only-merge-items-horizontally: false
-    parrots-are-unaffected-by-player-movement: false
+    parrots-are-unaffected-by-player-movement: true
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: true
     phantoms-spawn-attempt-max-seconds: 119
@@ -125,7 +125,7 @@ entities:
     should-remove-dragon: false
     spawner-nerfed-mobs-should-jump: false
     zombie-villager-infection-chance: default
-    zombies-target-turtle-eggs: true
+    zombies-target-turtle-eggs: false
   entities-target-with-follow-range: false
   markers:
     tick: true
@@ -148,29 +148,29 @@ entities:
     despawn-range-shape: ELLIPSOID
     despawn-ranges:
       ambient:
-        hard: default
-        soft: default
+        hard: 56
+        soft: 30
       axolotls:
-        hard: default
-        soft: default
+        hard: 56
+        soft: 30
       creature:
-        hard: default
-        soft: default
+        hard: 56
+        soft: 30
       misc:
-        hard: default
-        soft: default
+        hard: 56
+        soft: 30
       monster:
-        hard: default
-        soft: default
+        hard: 56
+        soft: 30
       underground_water_creature:
-        hard: default
-        soft: default
+        hard: 56
+        soft: 30
       water_ambient:
-        hard: default
-        soft: default
+        hard: 56
+        soft: 30
       water_creature:
-        hard: default
-        soft: default
+        hard: 56
+        soft: 30
     disable-mob-spawner-spawn-egg-transformation: false
     duplicate-uuid:
       mode: SAFE_REGEN
@@ -243,7 +243,7 @@ environment:
   max-block-ticks: 65536
   max-fluid-ticks: 65536
   nether-ceiling-void-damage-height: disabled
-  optimize-explosions: false
+  optimize-explosions: true
   portal-create-radius: 16
   portal-search-radius: 128
   portal-search-vanilla-dimension-scaling: true
@@ -282,7 +282,7 @@ lootables:
   retain-unlooted-shulker-box-loot-table-on-non-player-break: true
 maps:
   item-frame-cursor-limit: 128
-  item-frame-cursor-update-interval: 10
+  item-frame-cursor-update-interval: 20
 max-growth-height:
   bamboo:
     max: 16

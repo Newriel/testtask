@@ -13,10 +13,10 @@
 settings:
   debug: false
   bungeecord: false
-  save-user-cache-on-stop-only: false
+  save-user-cache-on-stop-only: true
   sample-count: 12
-  log-villager-deaths: true
-  log-named-deaths: true
+  log-villager-deaths: false
+  log-named-deaths: false
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh
@@ -50,8 +50,8 @@ world-settings:
   default:
     below-zero-generation-in-existing-chunks: true
     merge-radius:
-      item: 0.5
-      exp: -1.0
+      item: 3.5
+      exp: 5.75
     ticks-per:
       hopper-transfer: 8
       hopper-check: 1
@@ -67,11 +67,11 @@ world-settings:
       other-multiplier: 0.0
     view-distance: default
     simulation-distance: default
-    nerf-spawner-mobs: false
-    mob-spawn-range: 8
+    nerf-spawner-mobs: true
+    mob-spawn-range: 3
     item-despawn-rate: 6000
-    arrow-despawn-rate: 1200
-    trident-despawn-rate: 1200
+    arrow-despawn-rate: 300
+    trident-despawn-rate: 600
     entity-activation-range:
       animals: 32
       monsters: 32
@@ -106,11 +106,11 @@ world-settings:
       display: 128
       other: 64
     max-tick-time:
-      tile: 50
-      entity: 50
+      tile: 8
+      entity: 16
     thunder-chance: 100000
     unload-frozen-chunks: false
-    max-tnt-per-tick: 100
+    max-tnt-per-tick: 10
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -157,7 +157,7 @@ world-settings:
     seed-stronghold: default
     zombie-aggressive-towards-villager: true
     enable-zombie-pigmen-portal-spawns: true
-    hanging-tick-frequency: 100
+    hanging-tick-frequency: 200
     end-portal-sound-radius: 0
     dragon-death-sound-radius: 0
     wither-spawn-sound-radius: 0
